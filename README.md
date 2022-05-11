@@ -1,5 +1,8 @@
-# Node.js Rest APIs with Express, Sequelize & MySQL example
+# PDF Sign using wallet address and encode using private address
 
+# Node.js Rest APIs with Express, Sequelize For Back end
+
+# React + Typescript for Front end
 
 ## Install dependencies
 
@@ -13,7 +16,6 @@ npm install
 node server.js -U 'me' -p 'password'
 ```
 
-
 ### How to set up remote Postgres connection
 
 #### Summarized Steps
@@ -22,10 +24,8 @@ Expect to do the required tasks
 
 ![image](https://user-images.githubusercontent.com/5965718/160250849-43945b57-abfe-47db-a81a-5161efcfef2a.png)
 
-
 1. Modify the `pg_hba.conf` file and add an entry for the following
-2. Start msc.services as an admin in Win10, to do that you'll have to hit Windows button then type `services.msc` then right click start as administrator 
-
+2. Start msc.services as an admin in Win10, to do that you'll have to hit Windows button then type `services.msc` then right click start as administrator
 
 Documentation on auth methods
 
@@ -41,15 +41,13 @@ Documentation on auth methods
 > password  
 > Require the client to supply an unencrypted password for authentication. Since the password is sent in clear text over the network, this should not be used on untrusted networks. See Section 20.5 for details.
 
-
 #### Optionally
 
-You may have to 
+You may have to
 
-1. Check the `postgresql.conf` file to 
+1. Check the `postgresql.conf` file to
 
 #### Content
-
 
 ```bash
 psql -h <REMOTE HOST> -p <REMOTE PORT> -U <DB_USER> <DB_NAME>
